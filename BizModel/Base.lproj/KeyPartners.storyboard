@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dgk-g9-Koc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Key Partners-->
+        <scene sceneID="VUi-fX-IdF">
+            <objects>
+                <viewController title="Key Partners" id="lwd-qQ-lxw" customClass="KeyPartnersViewController" customModule="BizModel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SSc-fa-QS4"/>
+                        <viewControllerLayoutGuide type="bottom" id="xIe-d1-lVw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RhK-dw-Fmu">
+                        <rect key="frame" x="0.0" y="0.0" width="502" height="273"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Key Partners" id="aTR-Ka-fWP"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <fixedSimulatedSizeMetrics key="simulatedDestinationMetrics">
+                        <size key="portraitSize" width="502" height="273"/>
+                        <size key="landscapeSize" width="273" height="502"/>
+                    </fixedSimulatedSizeMetrics>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWN-Zj-Arg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-884.79999999999995" y="706.59670164917543"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LkK-1a-C0y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dgk-g9-Koc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p7S-ss-ASj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lwd-qQ-lxw" kind="relationship" relationship="rootViewController" id="Zai-Mj-XGh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ar3-j4-zrU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1824.8" y="706.59670164917543"/>
+        </scene>
+    </scenes>
+</document>

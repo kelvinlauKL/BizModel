@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Canvas View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CanvasViewController" customModule="BizModel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="x8i-OD-Aet">
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="550-5N-sl8" userLabel="Key Partners">
+                                        <connections>
+                                            <segue destination="kqP-Lv-8aG" kind="embed" id="JB8-FG-rzj"/>
+                                        </connections>
+                                    </containerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fYf-7B-7bY">
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l7-NS-PhI" userLabel="Key Activities">
+                                                <connections>
+                                                    <segue destination="tZa-vr-bGp" kind="embed" id="rKJ-Xp-iAc"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5v-vA-pNm" userLabel="Key Resources">
+                                                <connections>
+                                                    <segue destination="1kg-oq-CV3" kind="embed" id="L8q-ca-Plw"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPV-1x-JVw" userLabel="Value Propositions">
+                                        <connections>
+                                            <segue destination="42q-9t-34L" kind="embed" id="6dj-iG-QBH"/>
+                                        </connections>
+                                    </containerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="JOX-P9-Xhl">
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7h-QG-C9s" userLabel="Customer Relationships">
+                                                <connections>
+                                                    <segue destination="OgM-jh-z4n" kind="embed" id="EMO-QH-du0"/>
+                                                </connections>
+                                            </containerView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGK-qf-IJY" userLabel="Channels">
+                                                <connections>
+                                                    <segue destination="1A6-zM-bMh" kind="embed" id="JiT-2q-3Oc"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8F-fY-YLw" userLabel="Customer Segments">
+                                        <connections>
+                                            <segue destination="sSd-Gx-C1h" kind="embed" id="Qzd-dy-QFE"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="dLa-Pj-gZY">
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sj3-pd-62R" userLabel="Cost Structure">
+                                        <connections>
+                                            <segue destination="6O3-Wg-MJF" kind="embed" id="wcQ-m6-dU3"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cz-S4-gUr" userLabel="Revenue Streams">
+                                        <connections>
+                                            <segue destination="fcp-iA-KhS" kind="embed" id="vHk-FY-yEz"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dLa-Pj-gZY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2oo-pK-lYm"/>
+                            <constraint firstItem="x8i-OD-Aet" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="3SP-5f-GAA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dLa-Pj-gZY" secondAttribute="bottom" id="Bl3-Pn-dpc"/>
+                            <constraint firstAttribute="trailing" secondItem="dLa-Pj-gZY" secondAttribute="trailing" id="K7P-IK-Fbg"/>
+                            <constraint firstItem="x8i-OD-Aet" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L6i-59-vPC"/>
+                            <constraint firstAttribute="trailing" secondItem="x8i-OD-Aet" secondAttribute="trailing" id="fQL-yf-gcR"/>
+                            <constraint firstItem="dLa-Pj-gZY" firstAttribute="top" secondItem="x8i-OD-Aet" secondAttribute="bottom" constant="1" id="kzW-Jw-bVa"/>
+                            <constraint firstItem="x8i-OD-Aet" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zCj-iW-cwN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="containerViews" destination="W5v-vA-pNm" collectionClass="NSMutableArray" id="cAJ-bt-msH"/>
+                        <outletCollection property="containerViews" destination="R8F-fY-YLw" collectionClass="NSMutableArray" id="EUh-lA-Peg"/>
+                        <outletCollection property="containerViews" destination="bPV-1x-JVw" collectionClass="NSMutableArray" id="1j8-qX-gfB"/>
+                        <outletCollection property="containerViews" destination="2l7-NS-PhI" collectionClass="NSMutableArray" id="dmI-mU-jRK"/>
+                        <outletCollection property="containerViews" destination="a7h-QG-C9s" collectionClass="NSMutableArray" id="B4G-bh-bMi"/>
+                        <outletCollection property="containerViews" destination="550-5N-sl8" collectionClass="NSMutableArray" id="cuP-Ik-sLy"/>
+                        <outletCollection property="containerViews" destination="DGK-qf-IJY" collectionClass="NSMutableArray" id="ghL-fv-9dB"/>
+                        <outletCollection property="containerViews" destination="4cz-S4-gUr" collectionClass="NSMutableArray" id="N3l-B7-gYD"/>
+                        <outletCollection property="containerViews" destination="sj3-pd-62R" collectionClass="NSMutableArray" id="0s6-bT-7tk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--RevenueStream-->
+        <scene sceneID="0aE-HG-fH5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RevenueStream" id="fcp-iA-KhS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iKe-kg-PjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="687"/>
+        </scene>
+        <!--KeyActivities-->
+        <scene sceneID="vbx-8O-S98">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KeyActivities" id="tZa-vr-bGp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2R-sP-PBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="679"/>
+        </scene>
+        <!--ValuePropositions-->
+        <scene sceneID="zcI-R4-jwS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ValuePropositions" id="42q-9t-34L" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5f-Bp-cus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="725"/>
+        </scene>
+        <!--CustomerRelationships-->
+        <scene sceneID="9j2-um-NMI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomerRelationships" id="OgM-jh-z4n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wt3-64-qtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531" y="759"/>
+        </scene>
+        <!--CostStructure-->
+        <scene sceneID="y7M-Tn-Zg2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CostStructure" id="6O3-Wg-MJF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPh-dI-AwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="759"/>
+        </scene>
+        <!--KeyResources-->
+        <scene sceneID="CaL-hc-0da">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KeyResources" id="1kg-oq-CV3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTC-0j-drb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="751"/>
+        </scene>
+        <!--CustomerSegments-->
+        <scene sceneID="1t6-Rz-AIb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomerSegments" id="sSd-Gx-C1h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KtF-1m-Pez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="687"/>
+        </scene>
+        <!--Channels-->
+        <scene sceneID="UCJ-eM-HQG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Channels" id="1A6-zM-bMh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rx5-Y6-am5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="185" y="725"/>
+        </scene>
+        <!--KeyPartners-->
+        <scene sceneID="K3k-E4-lu3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="KeyPartners" id="kqP-Lv-8aG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IpK-2I-Zmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="710"/>
+        </scene>
+    </scenes>
+</document>
